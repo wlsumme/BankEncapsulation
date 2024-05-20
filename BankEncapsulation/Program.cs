@@ -4,13 +4,13 @@
     {
         static void Main(string[] args)
         {
-            var account = new BankAccount();
+            var williamsAccount = new BankAccount();
+            var macksAccount = new BankAccount();
 
-            account.Deposit(123);
-            
+            var manager = new AccountManger();
 
-            var balance = account.GetBalance();
-            Console.WriteLine(balance);
+            manager.ATM(williamsAccount);
         }
+       
     }
 }
